@@ -1,0 +1,22 @@
+<h3 style="color: grey; padding-left: 40px; padding-bottom: 20px">Zadnje vijesti</h3>
+<div class="container" id="table-scroll">
+	<table class="table table-active">
+		<thead>
+			<tr>
+				<th>Naslov</th>
+				<th>Sadržaj</th>
+				<th>Kategorija</th>
+				<th>Autor</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="oVijest in oVijesti track by $index | limitTo: -10">
+				<td>{{oVijest.naslov | limitChars:20}}</td>
+				<td>{{oVijest.sadrzaj | limitChars:20}}</td>
+				<td>{{oVijest.kategorija}}</td>
+				<td>{{oVijest.autor}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,16 @@
+<h3 style="color: grey; padding-left: 40px; padding-bottom: 20px">Kategorije</h3>
+<div class="container" id="table-scroll">
+	<table class="table table-borderless">
+		<thead>
+			<tr>
+				<th>Naziv kategorije</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="oKategorija in oKategorije track by $index">
+				<td>{{oKategorija.ime}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

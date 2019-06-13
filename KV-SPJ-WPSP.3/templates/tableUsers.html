@@ -1,0 +1,19 @@
+<div class="container" id="table-scroll">
+	<table class="table table-active">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Korisničko ime</th>
+				<th>Admin</th>
+			</tr>
+		</thead>
+
+		<tbody ng-controller="usersController">
+			<tr ng-repeat="oUser in oUsers track by $index">
+				<td>{{oUser.user_id}}</td>
+				<td>{{oUser.username}}</td>
+				<td>{{oUser.admin}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

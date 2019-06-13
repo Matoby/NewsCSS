@@ -1,0 +1,12 @@
+<div class="container" ng-controller="kategorijeController">
+	<div id="formaKategorija">
+		<form action="actionKategorije" method="POST">
+			<h3>Dodaj kategoriju</h3>
+			<input type="hidden" name="action_id" value="dodaj_kategoriju">
+			<label class="control-label col-lg-4 col-xs-4">Ime kategorije</label>
+			<div class="col-lg-5 col-xs-5"><input class="form-control" type="text" name="ime" required></div>
+			<button type="submit" value="Submit" class="btn btn-secondary btn-s">Spremi</button>
+			<button type="button" class="btn btn-danger btn-s close">Odustani</button>
+		</form>
+	</div>
+</div>

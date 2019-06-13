@@ -1,0 +1,25 @@
+<div class="container" id="table-scroll">
+	<table class="table table-active">
+		<thead>
+			<tr>
+				<th>Naslov</th>
+				<th>Sadržaj</th>
+				<th>Kategorija</th>
+				<th>Autor</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr ng-repeat="oVijest in oVijesti track by $index">
+				<td>{{oVijest.naslov}}</td>
+				<td>{{oVijest.sadrzaj}}</td>
+				<td>{{oVijest.kategorija}}</td>
+				<td>{{oVijest.autor}}</td>
+				<td><span class="glyphicon glyphicon-pencil"></span></td>
+				<td><span class="glyphicon glyphicon-trash"></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
